@@ -1,0 +1,26 @@
+.spin {
+    position: fixed;
+    top: calc((100vh - 200px)/2);
+    left: calc((100vw - 300px)/2);
+    z-index: 9999;
+    width: 300px;
+    height: 140px;
+    background-color: #252E33;
+    border: 1px solid #191B1D;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+.spin-circle {
+    position: absolute;
+    padding: 12px;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    overflow: hidden;
+    font-size: 18px;
+    color: #fff;
+    i{
+        color: #fff;
+        background-color: #fff;
+    }
+}
