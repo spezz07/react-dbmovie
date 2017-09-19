@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
-  "author": "spezz07 <spezz123@gmail.com> (http://www.spezz07.info/)",
+  "author": "spezz07 <spezz123@126.com> (http://www.spezz07.info/)",
   "dependencies": {
     "antd": "^2.13.0",
     "autoprefixer": "7.1.2",
