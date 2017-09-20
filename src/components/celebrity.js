@@ -29,7 +29,6 @@ const CelebrityDetail = (props) => {
       <div className='celebrity-summary'>
     "伊利亚·乔丹·伍德(Elijah Jordan Wood)，1981年1月28日出生
     于美国爱荷华州的锡达拉皮兹，父亲沃伦  伊利亚·伍德·伍德，母亲黛比·伍德
-    。他在家中排行老二，上边有一个哥哥扎克，下面有一个妹妹汉纳·伍德。年幼时
       </div>
       <h3>作品</h3>
       <div className='celebrity-works'>
