@@ -65,7 +65,6 @@ class Celebrity extends React.Component {
   }
   render () {
     let celebrityData = this.state.data
-    console.log(celebrityData)
     if (!celebrityData) return (<div>1111</div>)
     return (
       <div className='celebrity-container'>
