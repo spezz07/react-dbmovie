@@ -73,7 +73,6 @@ class Celebrity extends React.Component {
         <img src={celebrityData.avatars.large}
           className='celebrity-bg'/>
       </div>
-
     )
   }
 }
