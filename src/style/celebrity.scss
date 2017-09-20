@@ -1,0 +1,100 @@
+%lay-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%title{font-size: 28px;color: #fff;margin: 8px}
+.celebrity-container{
+    @extend %lay-center;
+    flex-wrap: wrap;
+}
+.celebrity-bg{
+    width: 100%;
+    -webkit-filter:blur(48px) brightness(80%);
+    filter:blur(48px) brightness(80%);
+    position: absolute;
+    z-index: -888;
+}
+.celebrity-cover{
+    @extend %lay-center;
+    width: 80%;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    .celebrity-avatars{
+        width: 240px;
+    }
+    h3,h4{width: 100%;@extend %title;text-align: center}
+    h3{font-size: 26px;}
+    h4{font-size:18px;}
+    .celebrity-professions {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        h5{
+            margin-right: 18px;
+            font-size: 18px;
+            color: #fff;
+        }
+        span {
+            color: #f6e65b;
+            border: 1px solid #f6e65b;
+            border-radius: 6px;
+            padding: 4px;
+            font-weight: bold;
+            margin: 8px 8px 8px 0;
+            font-size: 14px;
+        }
+    }
+
+}
+.celebrity-detail{
+    @extend %lay-center;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    h3{width: 100%;@extend %title;text-align: center}
+    .celebrity-summary{
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.35);
+        padding: 16px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 8px;
+        text-indent: 1em;
+    }
+    .celebrity-works{
+        @extend %lay-center;
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .celebrity-works-item{
+            width: 20%;
+            text-align: center;
+            @extend %lay-center;
+            flex-wrap: wrap;
+            img{
+                display: block;
+                width: 120px;
+                margin: 4px auto;
+            }
+           .celebrity-works-item-title{
+                color: #fff;
+                width: 100%;
+                font-size: 18px;
+                margin: 8px;
+               
+            }
+            .celebrity-works-item-rating{
+                width: 100%;
+                font-size: 14px;
+                color: #fff;
+                span{
+                    margin: 0 4px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+}

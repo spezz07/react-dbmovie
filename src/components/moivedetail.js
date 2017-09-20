@@ -153,6 +153,7 @@ const mapStateMovieDetail = (state) => {
     list: state.moviedetail
   }
 }
+
 const mapDispathMovieDetail = (dispatch) => {
   return {
     getmoviedetail: (city, id) => {
@@ -163,8 +164,10 @@ const mapDispathMovieDetail = (dispatch) => {
     }
   }
 }
+
 const MoiveDetailContainer = connect(
   mapStateMovieDetail,
   mapDispathMovieDetail
 )(withRouter(MoiveDetail))
+
 export default MoiveDetailContainer
