@@ -1,16 +1,22 @@
 import { createStore, combineReducers, applyMiddleware } from 'Redux'
 import { movielist, moviedetail, searchlist, celebritylist } from './reducer'
+import createHistory from 'history/createBrowserHistory'
+import { routerReducer, routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk'
+
+const history = createHistory()
+const routermiddleware = routerMiddleware(history)
 
 let store = createStore(
   combineReducers({
     movielist,
     moviedetail,
     searchlist,
-    celebritylist
+    celebritylist,
+    router: routerReducer
   }),
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-  applyMiddleware(thunk)
+  applyMiddleware(thunk, routermiddleware)
 )
 
 export default store

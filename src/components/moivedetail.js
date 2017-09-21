@@ -5,6 +5,7 @@ import {getMovieDetail, getSearch} from '../store/action'
 import Loading from './loading'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
+import { Link } from 'react-router-dom'
 
 // let setimgHeight = () => {
 //   return document.body.scrollHeight + document.querySelector('.detail-container').scrollHeight - 200
@@ -110,7 +111,7 @@ const SubjectContainer = (props) => {
         { props.data.casts.map((i, index) => (
           <div className='subjects-casts-item' key={index}>
             <img src={i.avatars ? i.avatars.large : defaultimg} className='subjects-casts-img'/>
-            <span className='subjects-casts-name'>{i.name ? i.name : '暂无数据'}</span>
+            <Link to ={`/celebrity/${i.id}`} className='subjects-casts-name'><span >{i.name ? i.name : '暂无数据'}</span></Link>
             <span className='subjects-casts-enname'>{i.name_en ? i.name_en : '暂无数据'}</span>
           </div>
         ))}

@@ -70,19 +70,24 @@
         justify-content: flex-start;
         .celebrity-works-item{
             width: 20%;
+            min-height: 286px;
             text-align: center;
             @extend %lay-center;
             flex-wrap: wrap;
             img{
                 display: block;
                 width: 120px;
+                height: 180px;
                 margin: 4px auto;
             }
            .celebrity-works-item-title{
-                color: #fff;
                 width: 100%;
                 font-size: 18px;
                 margin: 8px;
+                color: #FFF6AE;
+                &:hover{
+                    color: #FAE336;
+                }
                
             }
             .celebrity-works-item-rating{

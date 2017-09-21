@@ -59,24 +59,24 @@ $linkcolor:#F8F7BE;
      }
     }
     .search-item-subjects-directors{
-        span{
+        span>a{
             font-size: 20px;
             color: $linkcolor;
             margin-right: 8px;
+            color: #FFF6AE;
             &:hover{
-              color: #FFDD1D;
-              cursor: pointer;
+                color: #FAE336;
             }
         } 
     }
     .search-item-subjects-casts{
-        span{
+        span>a{
             font-size: 20px;
             color: $linkcolor;
             margin-right: 8px;
+            color: #FFF6AE;
             &:hover{
-              color: #FFDD1D;
-              cursor: pointer;
+                color: #FAE336;
             }
         }        
         }

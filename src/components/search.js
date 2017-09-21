@@ -23,10 +23,10 @@ const SearchSubjects = (props) => {
               return (<span key={index}>{i}/</span>)
             })}</div>
             <div className='search-item-subjects-directors'>导演：{props.data.directors.map((i, index) => {
-              return (<span key={index}>{i.name}</span>)
+              return (<span key={index}><Link to={`/celebrity/${i.id}`}>{i.name}</Link></span>)
             })}</div>
             <div className='search-item-subjects-casts'>主演: {props.data.casts.map((i, index) => {
-              return (<span key={index}>{i.name}</span>)
+              return (<span key={index}><Link to={`/celebrity/${i.id}`}>{i.name}</Link></span>)
             })}</div>
           </div>
         </div>
