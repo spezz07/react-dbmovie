@@ -1,5 +1,7 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import createHistory from 'history/createHashHistory'
+import { ConnectedRouter } from 'react-router-redux'
 
 import Header from '../components/header'
 import MoiveListContainer from '../components/movieslist'
@@ -7,8 +9,10 @@ import MoiveDetailContainer from '../components/moivedetail'
 import SearchListContainer from '../components/search'
 import CelebrityContainer from '../components/celebrity'
 
+let history = createHistory()
+
 const RouteConfig = () => (
-  <Router>
+  <ConnectedRouter history={history}>
     <div>
       <Route path='/' component={Header}/>>
       <Route path='/' exact component={MoiveListContainer} />
@@ -16,7 +20,7 @@ const RouteConfig = () => (
       <Route path='/search/:content' exact component={ SearchListContainer} />
       <Route path='/celebrity/:id' exact component={ CelebrityContainer} />
     </div>
-  </Router>
+  </ConnectedRouter>
 )
 
 export default RouteConfig

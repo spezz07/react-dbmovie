@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware } from 'Redux'
 import { movielist, moviedetail, searchlist, celebritylist } from './reducer'
-import createHistory from 'history/createBrowserHistory'
+import createHistory from 'history/createHashHistory'
 import { routerReducer, routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk'
 
