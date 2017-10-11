@@ -10,8 +10,8 @@
 
  2、在页面设计有部分方面参考了 https://github.com/haishanh/doba-react 
 
- 3、由于使用豆瓣电影的api进行数据请求时，会出现跨域错误，因此在这我使用了一个名为'Allow-Control-Allow-Origin: *'
- 的Chrome插件来配合使用
+ ~~3、由于使用豆瓣电影的api进行数据请求时，会出现跨域错误，因此在这我使用了一个名为'Allow-Control-Allow-Origin: *'
+ 的Chrome插件来配合使用~~已解决，用jsonp了。
 
 
 
